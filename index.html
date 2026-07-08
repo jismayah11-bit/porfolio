@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <title>Portfolio — Jismaia | Développeur & Designer</title>
+  <meta name="description" content="Portfolio professionnel — développeur web, designer UI/UX. Projets, compétences, expérience et contact." />
+  <meta name="author" content="MIANTSATIANA Hiarantsoa Jismaia" />
+  <meta name="keywords" content="portfolio, développeur web, designer, UI, UX, freelance" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio — Jismaia" />
+  <meta property="og:description" content="Développeur & Designer — projets, compétences et contact." />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio — Jismaia" />
+  <meta name="twitter:description" content="Développeur & Designer — projets, compétences et contact." />
+  <link rel="canonical" href="./" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "MIANTSATIANA Hiarantsoa Jismaia",
+    "jobTitle": "Développeur & Designer",
+    "url": "https://votre-domaine.com",
+    "sameAs": [
+      "https://www.facebook.com/votre-page",
+      "https://www.linkedin.com/in/votre-profil",
+      "https://github.com/votre-profil"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ============== ARRIÈRE-PLAN ANIMÉ ============== -->
+  <div class="bg-scene" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <div class="bg-blob bg-blob--1"></div>
+    <div class="bg-blob bg-blob--2"></div>
+    <div class="bg-blob bg-blob--3"></div>
+    <canvas id="particles" class="bg-particles"></canvas>
+    <div class="bg-grid"></div>
+  </div>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+  <!-- ============== NAVIGATION ============== -->
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Navigation principale">
+      <a href="#hero" class="nav__brand" aria-label="Accueil">
+        <span class="nav__logo" aria-hidden="true">◆</span>
+        <span>Portfolio</span>
+      </a>
+      <ul class="nav__list" role="list">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#social">Réseaux</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Changer de thème" title="Changer de thème">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="navToggle" class="icon-btn nav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu glass" hidden>
+      <ul role="list">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#social">Réseaux</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <!-- ============== HERO ============== -->
+    <section id="hero" class="section hero">
+      <div class="hero__inner reveal">
+        <div class="hero__card glass glass--xl">
+          <div class="hero__badge">
+            <span class="dot"></span> Disponible pour de nouveaux projets
+          </div>
+          <h1 class="hero__title">
+            Bonjour, je suis <span class="grad-text">MIANTSATIANA Hiarantsoa Jismaia</span>
+          </h1>
+          <p class="hero__subtitle">Développeur Web &amp; Designer UI/UX</p>
+          <p class="hero__desc">
+            Je conçois des expériences numériques modernes, accessibles et performantes.
+            Interfaces premium, animations fluides et code propre.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--ghost">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero__avatar reveal" aria-hidden="true">
+          <div class="avatar glass">
+            <div class="avatar__ring"></div>
+            <div class="avatar__img">
+              <img src="profile.jpg" alt="Jismaia" class="app-logo">
+              <span class="avatar__initials">VN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Faire défiler vers le bas">
+        <span></span>
+      </a>
+    </section>
+    <!-- ============== À PROPOS ============== -->
+    <section id="about" class="section">
+      <header class="section__head reveal">
+        <p class="eyebrow">À propos</p>
+        <h2 class="section__title">Une approche centrée sur le détail</h2>
+      </header>
+      <div class="about glass glass--lg reveal">
+        <p>
+          Présentez-vous ici. Décrivez votre parcours, vos passions et votre vision du design
+          et du développement. Mettez en avant ce qui vous distingue : votre méthodologie,
+          vos valeurs, votre approche du produit.
+        </p>
+        <div class="about__stats">
+          <div><strong>+5</strong><span>années d'expérience</span></div>
+          <div><strong>40</strong><span>projets livrés</span></div>
+          <div><strong>20</strong><span>clients satisfaits</span></div>
+          <div><strong>∞</strong><span>café consommé</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- ============== COMPÉTENCES ============== -->
+    <section id="skills" class="section">
+      <header class="section__head reveal">
+        <p class="eyebrow">Compétences</p>
+        <h2 class="section__title">Stack &amp; outils</h2>
+      </header>
+      <div class="grid grid--3">
+        <article class="card glass reveal">
+          <h3>Front-End</h3>
+          <ul class="chips">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            <li>React</li><li>TypeScript</li><li>Tailwind</li>
+          </ul>
+        </article>
+        <article class="card glass reveal">
+          <h3>Design</h3>
+          <ul class="chips">
+            <li>Figma</li><li>UI/UX</li><li>Design System</li>
+            <li>Prototypage</li><li>Glassmorphism</li>
+          </ul>
+        </article>
+        <article class="card glass reveal">
+          <h3>Outils</h3>
+          <ul class="chips">
+            <li>Git</li><li>Vite</li><li>Node.js</li>
+            <li>Accessibilité</li><li>SEO</li><li>Performance</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <!-- ============== PROJETS ============== -->
+    <section id="projects" class="section">
+      <header class="section__head reveal">
+        <p class="eyebrow">Projets</p>
+        <h2 class="section__title">Sélection récente</h2>
+      </header>
+      <div class="grid grid--3">
+        <article class="project glass reveal">
+          <div class="project__media"><span>Aperçu</span></div>
+          <div class="project__body">
+            <h3>Nom du projet</h3>
+            <p>Courte description du projet et du problème résolu.</p>
+            <ul class="chips chips--sm"><li>React</li><li>Node</li><li>UI</li></ul>
+            <a href="#" class="link-arrow">Voir le projet →</a>
+          </div>
+        </article>
+        <article class="project glass reveal">
+          <div class="project__media"><span>Aperçu</span></div>
+          <div class="project__body">
+            <h3>Nom du projet</h3>
+            <p>Courte description du projet et du problème résolu.</p>
+            <ul class="chips chips--sm"><li>Vite</li><li>TS</li><li>API</li></ul>
+            <a href="#" class="link-arrow">Voir le projet →</a>
+          </div>
+        </article>
+        <article class="project glass reveal">
+          <div class="project__media"><span>Aperçu</span></div>
+          <div class="project__body">
+            <h3>Nom du projet</h3>
+            <p>Courte description du projet et du problème résolu.</p>
+            <ul class="chips chips--sm"><li>Design</li><li>Mobile</li></ul>
+            <a href="#" class="link-arrow">Voir le projet →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ============== EXPÉRIENCE ============== -->
+    <section id="experience" class="section">
+      <header class="section__head reveal">
+        <p class="eyebrow">Expérience &amp; Formation</p>
+        <h2 class="section__title">Parcours</h2>
+      </header>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card glass">
+            <p class="timeline__date">2024 — Aujourd'hui</p>
+            <h3>Poste / Rôle</h3>
+            <p>Entreprise — Description courte des missions et réalisations.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card glass">
+            <p class="timeline__date">2022 — 2024</p>
+            <h3>Poste / Rôle</h3>
+            <p>Entreprise — Description courte des missions et réalisations.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card glass">
+            <p class="timeline__date">2020 — 2022</p>
+            <h3>Formation</h3>
+            <p>École / Diplôme — Description courte.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <!-- ============== RÉSEAUX SOCIAUX / FACEBOOK ============== -->
+    <section id="social" class="section">
+      <header class="section__head reveal">
+        <p class="eyebrow">Réseaux sociaux</p>
+        <h2 class="section__title">Suivez ma page Facebook</h2>
+      </header>
+      <div class="social-grid">
+        <div class="social-text glass glass--lg reveal">
+          <h3>Restons connectés</h3>
+          <p class="fb-identity">
+            <strong>Miantsa Tiana</strong> <span class="verified" aria-label="Compte vérifié" title="Compte vérifié">✔</span><br />
+            <span class="muted">MIANTSATIANA HIARANTSOA Jismaïa</span>
+          </p>
+          <ul class="fb-stats" role="list">
+            <li><strong>5,2 K</strong><span>followers</span></li>
+            <li><strong>5,6 K</strong><span>suivi(e)s</span></li>
+            <li><strong>199</strong><span>publications</span></li>
+          </ul>
+          <p>
+            Basé à <strong>Fianarantsoa</strong> · Musicien · Jolies Coccinelles Mananjary ·
+            EMIT Fianarantsoa. Découvrez mes derniers projets, articles et coulisses
+            de mon travail directement sur ma page Facebook.
+          </p>
+          <div class="fb-cta">
+            <a href="https://www.facebook.com/miantsa.tiana" target="_blank" rel="noopener" class="btn btn--primary">
+              Visiter la page Facebook
+            </a>
+            <a href="https://instagram.com/miantsa.jis" target="_blank" rel="noopener" class="btn btn--ghost">
+              @miantsa.jis
+            </a>
+          </div>
+        </div>
+        <div class="phone-wrap reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="phone__bar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="phone__app">
+                <div class="fb-cover" style="background-image:url('assets/img/facebook-profile.jpg');"></div>
+                <div class="fb-header">
+                  <div class="fb-avatar" style="background-image:url('assets/img/facebook-profile.jpg');"></div>
+                  <div>
+                    <strong>Miantsa Tiana <span class="verified">✔</span></strong>
+                    <p>5,2 K followers · 199 publications</p>
+                  </div>
+                </div>
+                <div class="fb-post">
+                  <p><strong>Nouveau projet en ligne !</strong></p>
+                  <p>Développeur Web &amp; Designer UI/UX · Fianarantsoa 🇲🇬</p>
+                </div>
+                <div class="fb-actions">
+                  <span>👍 J'aime</span><span>💬 Commenter</span><span>↗ Partager</span>
+                </div>
+              </div>
+            </div>
+            <div class="phone__glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============== CONTACT ============== -->
+    <section id="contact" class="section">
+      <header class="section__head reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section__title">Discutons de votre projet</h2>
+      </header>
+      <div class="contact-grid">
+        <aside class="contact-info glass reveal">
+          <h3>Coordonnées</h3>
+          <ul role="list">
+            <li><span>Email</span><a href="mailto:jismayah83@gmail.com">jismayah83@gmail.com</a></li>
+            <li><span>Téléphone</span><a href="tel:+261388734749">+261 38 87 347 49</a></li>
+            <li><span>Localisation</span><span> Fianarantsoa, Madagascar</span></li>
+          </ul>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn" class="icon-btn">in</a>
+            <a href="#" aria-label="GitHub" class="icon-btn">gh</a>
+            <a href="#" aria-label="Facebook" class="icon-btn">fb</a>
+            <a href="#" aria-label="X" class="icon-btn">𝕏</a>
+          </div>
+        </aside>
+        <form class="contact-form glass reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Envoyer le message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer glass">
+    <div class="footer__inner">
+      <p>© <span id="year"></span> Jismaia. Tous droits réservés.</p>
+      <ul role="list" class="footer__links">
+        <li><a href="#hero">Retour en haut</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
